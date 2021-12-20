@@ -1,0 +1,752 @@
+{
+	"info": {
+		"_postman_id": "02743ebe-8633-4707-908c-a5731ed0b7ad",
+		"name": "Log4J API Calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_dns",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_dns\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (http dns)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|dns|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldap",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldap\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (http ldap)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldap|3a 2f 2f|\\\\\\\";nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldaps",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldaps\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (http ldaps)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldaps|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_rmi",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_rmi\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (http rmi)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|rmi|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_dns",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_dns\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (tcp dns)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|dns|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "T_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldap",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldap\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (tcp ldap)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldap|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldaps",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldaps\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (tcp ldaps)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldaps|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_rmi",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_rmi\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (tcp rmi)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"tcp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|rmi|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_dns",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_dns\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (udp dns)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"udp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|dns|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldap",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldap\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (udp ldap)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"udp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldap|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldaps",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldaps\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (udp ldaps)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"udp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|ldaps|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_rmi",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_rmi\",\r\n\"accuracy\": \"low\",\r\n\"action\": \"accept\",\r\n\"attackType\": \"attempted-admin\",\r\n\"deprecated\": \"no\",\r\n\"description\": \"ET EXPLOIT Apache log4j RCE Attempt (udp rmi)\",\r\n\"direction\": \"to-server\",\r\n\"documentation\": \"https://www.f5.com/company/blog/protection-against-apache-log4j2-vulnerability https://lunasec.io/docs/blog/log4j-zero-day/ \",\r\n\"log\": \"yes\",\r\n\"performanceImpact\": \"low\",\r\n\"protocol\": \"udp\",\r\n\"referenceLinks\": \"https://community.rsa.com/t5/netwitness-blog/apache-log4j-log4shell-background-and-detection-rules/ba-p/660546attachment-id=32926\",\r\n\"references\": \"RSA SOC Prime Team authored these signatures. CVE-2021-44228\",\r\n\"risk\": \"low\",\r\n\"service\": \"/Common/http\",\r\n\"sig\": \"content:\\\\\\\"|24 7b|jndi|3a|rmi|3a 2f 2f|\\\\\\\"; nocase;\",\r\n\"userDefined\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/signature",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Creation",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"kind\": \"tm:security:protocol-inspection:profile:profilestate\",\r\n            \"name\": \"log4js\",\r\n            \"partition\": \"Common\",\r\n            \"avrStatCollect\": \"on\",\r\n            \"complianceEnable\": \"on\",\r\n            \"description\": \"Log4JS Custom Protocol Profile\",\r\n            \"signatureEnable\": \"on\",\r\n            \"references\": {},\r\n            \"services\": [\r\n                {\r\n                    \"name\": \"http\",\r\n                    \"partition\": \"Common\",\r\n                    \"status\": \"enabled\",\r\n                    \"ports\": [\r\n                        {\r\n                            \"name\": \"80\"\r\n                        },\r\n                        {\r\n                            \"name\": \"8080\"\r\n                        }\r\n                    ],\r\n                    \"signature\": [\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_dns\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_dns?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldap\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldap?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldaps\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_ldaps?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_rmi\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-http_rmi?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_dns\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_dns?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldap\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldap?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldaps\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_ldaps?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_rmi\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-tcp_rmi?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_dns\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_dns?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldap\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldap?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldaps\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_ldaps?ver=13.1.3.4\"\r\n                            }\r\n                        },\r\n                        {\r\n                            \"name\": \"ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_rmi\",\r\n                            \"partition\": \"Common\",\r\n                            \"action\": \"drop\",\r\n                            \"log\": \"yes\",\r\n                            \"nameReference\": {\r\n                                \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/signature/~Common~ET_EXPLOIT_Apache_log4j_RCE_Attempt-udp_rmi?ver=13.1.3.4\"\r\n                            }\r\n                        }\r\n                    ],\r\n                    \"nameReference\": {\r\n                        \"link\": \"https://localhost/mgmt/tm/security/protocol-inspection/service/~Common~http?ver=13.1.3.4\"\r\n                    }\r\n                }\r\n            ]\r\n        }"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/security/protocol-inspection/profile",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"security",
+						"protocol-inspection",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enable Profile on VS",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0mcast!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46NDAxZWxsaW90dFch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"kind\": \"tm:ltm:virtual:profiles:profilesstate\",\r\n\"name\": \"log4js\",\r\n\"partition\": \"Common\",\r\n\"fullPath\": \"/Common/log4js\",\r\n\"context\": \"all\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.56.56/mgmt/tm/ltm/virtual/~Common~tcp_any/profiles",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"56"
+					],
+					"path": [
+						"mgmt",
+						"tm",
+						"ltm",
+						"virtual",
+						"~Common~tcp_any",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
